@@ -12,18 +12,3 @@ function App() {
 }
 
 export default App
-
-
-
-
-// import { useParams } from 'react-router-dom';
-
-// export default function UserDetails() {
-//     const { id } = useParams();
-//     return (
-//         <section>
-//             <h1>User Details</h1>
-//             <p>User ID: {id}</p>
-//         </section>
-//     )
-// }

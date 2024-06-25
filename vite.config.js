@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": 'http://localhost:8080',
+      "/spoonacularApi": 'http://localhost:8080',
     }
   }
 })

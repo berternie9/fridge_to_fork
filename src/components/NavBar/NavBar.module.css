@@ -1,0 +1,18 @@
+.appBar {
+    background-color: var(--primary-colour);
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.linkWrapper {
+    padding-right: 2rem;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

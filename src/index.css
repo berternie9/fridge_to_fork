@@ -1,28 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  min-height: 100%;
-  height: 100vh;
-  margin: 0;
-  overflow: auto;
-}
-
-html {
-  min-height: 100%;
-  overflow: auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-img {
-  display: block;
+:root {
+    --primary-colour: rgb(149, 209, 220);
+    --secondary-colour: rgb(111, 206, 191);
+    --light-grey:  #d2d8df;
+    --background-colour: rgb(253, 237, 215);
 }
