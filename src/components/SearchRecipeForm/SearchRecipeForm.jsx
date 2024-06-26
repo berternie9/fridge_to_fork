@@ -4,7 +4,6 @@ import {
   TextField,
   Chip,
   Stack,
-  IconButton,
   Container,
   InputLabel,
   MenuItem,
@@ -18,6 +17,7 @@ import styles from "./SearchRecipeForm.module.css";
 export default function SearchRecipeForm({
   updateRecipeSearchParams,
   recipeSearchParams,
+  updateRecipe,
 }) {
   const [ingredient, setIngredient] = useState("");
   const [ingredients, setIngredients] = useState([]);
@@ -100,6 +100,13 @@ export default function SearchRecipeForm({
       includeIngredients: newIngredientsCsv,
       cuisine: cuisineNormalised,
       diet: dietNormalised,
+    });
+
+    updateRecipe({
+      ingredients: [],
+      instructions: [],
+      image: "",
+      title: "",
     });
   }
 

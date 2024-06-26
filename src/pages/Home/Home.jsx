@@ -11,7 +11,13 @@ export default function Home() {
     diet: "",
   });
   const [recipeList, setRecipeList] = useState([]);
-  const [recipe, setRecipe] = useState({ ingredients: [], instructions: [] });
+  const [recipe, setRecipe] = useState({
+    ingredients: [],
+    instructions: [],
+    image: "",
+    title: "",
+    id: "",
+  });
 
   function updateRecipeSearchParams(recipeSearchParams) {
     setRecipeSearchParams(recipeSearchParams);
@@ -30,6 +36,7 @@ export default function Home() {
       <SearchRecipeForm
         recipeSearchParams={recipeSearchParams}
         updateRecipeSearchParams={updateRecipeSearchParams}
+        updateRecipe={updateRecipe}
       />
       {recipe.ingredients.length === 0 && recipe.instructions.length === 0 ? (
         <RecipeList
@@ -40,7 +47,7 @@ export default function Home() {
           recipe={recipe}
         />
       ) : (
-        <Recipe />
+        <Recipe recipe={recipe} />
       )}
     </section>
   );

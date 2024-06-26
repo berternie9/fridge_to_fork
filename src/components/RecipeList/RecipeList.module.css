@@ -10,3 +10,7 @@
 .recipeItem {
   cursor: pointer;
 }
+
+.bookmark {
+  cursor: pointer;
+}

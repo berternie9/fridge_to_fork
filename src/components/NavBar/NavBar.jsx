@@ -22,7 +22,7 @@ export default function NavBar() {
                 Recipe Finder
               </Link>
               <Link to="/" className={`${styles.link} ${styles.linkWrapper}`}>
-                Favourites
+                Saved
               </Link>
               <Link to="/" className={`${styles.link} ${styles.linkWrapper}`}>
                 My Recipes
