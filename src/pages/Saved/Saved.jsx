@@ -5,11 +5,11 @@ import SavedRecipe from "../../components/SavedRecipe/SavedRecipe.jsx";
 export default function Saved() {
   const [savedRecipeList, setSavedRecipeList] = useState([]);
   const [savedRecipe, setSavedRecipe] = useState({
-    ingredients: [],
-    instructions: [],
-    image: "",
-    title: "",
     id: "",
+    isOwnedByUser: null,
+    title: "",
+    user_id: "",
+    recipe_data: {},
   });
 
   function updateSavedRecipeList(savedRecipeList) {
@@ -22,8 +22,7 @@ export default function Saved() {
 
   return (
     <section>
-      {savedRecipe.ingredients.length === 0 &&
-      savedRecipe.instructions.length === 0 ? (
+      {!savedRecipe.id ? (
         <SavedRecipeList
           updateSavedRecipeList={updateSavedRecipeList}
           savedRecipeList={savedRecipeList}

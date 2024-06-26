@@ -16,7 +16,7 @@ export default function SavedRecipe({ savedRecipe }) {
       <Container className={styles.header} maxWidth="xl">
         <img
           className={styles.image}
-          src={savedRecipe.image}
+          src={savedRecipe.recipe_data.image}
           alt="recipe-img"
         />
         <div className="titleWrapper">

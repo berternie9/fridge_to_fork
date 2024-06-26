@@ -1,0 +1,24 @@
+.loginBtn {
+  color: var(--secondary-colour);
+  border: dashed white 3px;
+  padding: 2rem;
+  border-radius: 2rem;
+  font-size: x-large;
+  background-color: var(--transparent-white);
+}
+
+.loginBtn:hover {
+  background-color: var(--secondary-colour-transparent);
+  border: dashed white 3px;
+}
+
+.btnWrapper {
+  box-sizing: border-box;
+  min-height: 80%;
+  height: 80vh;
+  margin: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

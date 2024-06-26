@@ -1,0 +1,52 @@
+.header {
+  margin: 2rem auto;
+  padding: 1rem;
+  width: fit-content;
+  max-width: 60vw;
+  background-color: var(--transparent-white);
+  border-radius: 2rem;
+  border: 4px white dashed;
+  display: flex;
+}
+
+.title {
+  color: var(--dark-grey);
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0 2rem;
+}
+
+.image {
+  border-radius: 1rem;
+}
+
+.ingredients,
+.instructions {
+  margin: 2rem;
+  padding: 1rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--transparent-white);
+  border-radius: 2rem;
+  border: 4px white dashed;
+}
+
+.content {
+  justify-content: center;
+}
+
+.contentHeader {
+  font-weight: bold;
+  font-size: large;
+  color: var(--dark-grey);
+}
+
+.contentSubheader {
+  font-weight: bold;
+  font-size: normal;
+  color: var(--dark-grey);
+}
+
+.titleWrapper {
+  display: inline;
+}

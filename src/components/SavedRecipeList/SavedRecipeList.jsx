@@ -11,13 +11,13 @@ export default function SavedRecipeList({
   updateSavedRecipeList,
   savedRecipeList,
   updateSavedRecipe,
-  savedRecipe,
 }) {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   useEffect(() => {
-    RecipeApi.findManyRecipesSpoonacularByUserId(1) // userId
-      .then(updateSavedRecipeList);
+    RecipeApi.findManyRecipesSpoonacularByUserId(
+      localStorage.getItem("userId")
+    ).then(updateSavedRecipeList);
   }, []);
 
   const Item = styled(Paper)(({ theme }) => ({
@@ -41,7 +41,10 @@ export default function SavedRecipeList({
   }
 
   async function removeBookmarkClick(recipeData) {
-    await RecipeApi.destroySpoonacularRecipe(recipeData.recipe_data.id, 1); // userId
+    await RecipeApi.destroySpoonacularRecipe(
+      recipeData.recipe_data.id,
+      localStorage.getItem("userId")
+    );
     updateSavedRecipeList(
       savedRecipeList.filter(
         (recipe) => recipe.recipe_data.id !== recipeData.recipe_data.id
@@ -64,7 +67,7 @@ export default function SavedRecipeList({
   );
 
   return (
-    <Box sx={{ flexGrow: 1, m: 5, bgcolor: "var(--background-colour)" }}>
+    <Box sx={{ flexGrow: 1, m: 5 }}>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}

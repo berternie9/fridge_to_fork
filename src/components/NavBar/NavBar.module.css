@@ -9,10 +9,16 @@
 
 .link:hover {
   color: var(--secondary-colour);
+  background-color: transparent;
 }
 
 .linkWrapper {
-  padding-right: 2rem;
+  margin: 0 1rem;
+}
+
+.loggedInAs {
+  margin: 0 2rem;
+  cursor: auto;
 }
 
 .title {

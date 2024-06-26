@@ -6,6 +6,19 @@
   display: block;
 }
 
+.searchBtn {
+  border: dashed white 3px;
+}
+
+.searchBtn:hover {
+  background-color: var(--secondary-colour-transparent);
+  border: dashed white 3px;
+}
+
+.addBtn:hover {
+  background-color: var(--transparent-white);
+}
+
 .ingredientSearch,
 .cuisineSearch,
 .dietSearch {
