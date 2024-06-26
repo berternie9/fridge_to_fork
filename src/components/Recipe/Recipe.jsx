@@ -1,7 +1,3 @@
-export default function Recipe () {
-    return (
-        <section>
-            
-        </section>
-    )
+export default function Recipe() {
+  return <section>Hiiii</section>;
 }
