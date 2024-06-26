@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
 import SearchRecipeForm from "../../components/SearchRecipeForm/SearchRecipeForm.jsx";
 import RecipeList from "../../components/RecipeList/RecipeList.jsx";
 import Recipe from "../../components/Recipe/Recipe.jsx";

@@ -21,10 +21,16 @@ export default function NavBar() {
               >
                 Recipe Finder
               </Link>
-              <Link to="/" className={`${styles.link} ${styles.linkWrapper}`}>
+              <Link
+                to="/saved"
+                className={`${styles.link} ${styles.linkWrapper}`}
+              >
                 Saved
               </Link>
-              <Link to="/" className={`${styles.link} ${styles.linkWrapper}`}>
+              <Link
+                to="/userRecipes"
+                className={`${styles.link} ${styles.linkWrapper}`}
+              >
                 My Recipes
               </Link>
             </div>

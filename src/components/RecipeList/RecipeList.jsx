@@ -4,7 +4,7 @@ import * as SpoonacularApi from "../../utils/spoonacular_api.js";
 import * as RecipeApi from "../../utils/recipe_api.js";
 
 import { experimentalStyled as styled } from "@mui/material/styles";
-import { Box, Paper, Grid, IconButton, Button, Snackbar } from "@mui/material";
+import { Box, Paper, Grid, IconButton, Snackbar } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import BookmarkAddOutlinedIcon from "@mui/icons-material/BookmarkAddOutlined";
 

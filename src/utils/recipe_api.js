@@ -29,3 +29,13 @@ export async function findRecipeUserById(recipeId) {
   let res = await axios.get(`/api/recipeUser/${recipeId}`);
   return res.data;
 }
+
+export async function findManyRecipesSpoonacularByUserId(userId = 1) {
+  let res = await axios.get(`/api/recipeSpoonacular/recipes/${userId}`);
+  return res.data;
+}
+
+export async function findManyRecipesUserByUserId(userId = 1) {
+  let res = await axios.get(`/api/recipeUser/recipes/${userId}`);
+  return res.data;
+}
