@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "http://localhost:8080",
-      "/spoonacularApi": "http://localhost:8080",
+      "/api": "https://vho1awboug.execute-api.us-east-1.amazonaws.com",
+      "/spoonacularApi":
+        " https://vho1awboug.execute-api.us-east-1.amazonaws.com",
     },
   },
 });
