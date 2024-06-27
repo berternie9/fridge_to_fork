@@ -2,9 +2,20 @@
   background-color: var(--primary-colour);
 }
 
+.drawer {
+  background-color: var(--transparent-white);
+}
+
+.drawerBox {
+  background-color: var(--background-colour);
+  height: 100%;
+  color: var(--dark-grey);
+}
+
 .link {
   color: inherit;
   text-decoration: none;
+  line-height: 0;
 }
 
 .link:hover {
@@ -14,11 +25,17 @@
 
 .linkWrapper {
   margin: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .loggedInAs {
   margin: 0 2rem;
-  cursor: auto;
+  cursor: default;
+}
+
+.menuIcon:hover {
+  background-color: transparent;
 }
 
 .title {
@@ -30,4 +47,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.toolbarLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .linkWrapper {
+    margin: 0;
+  }
+
+  .title {
+    font-size: large;
+  }
 }

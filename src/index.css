@@ -1,5 +1,6 @@
 :root {
   --primary-colour: rgb(149, 209, 220);
+  --primary-colour-transparent: rgba(149, 209, 220, 0.44);
   --secondary-colour: rgb(249, 152, 26);
   --secondary-colour-transparent: rgba(249, 152, 26, 0.356);
   --light-grey: #d2d8df;

@@ -15,7 +15,7 @@ export default function Recipe({ recipe }) {
     <>
       <Container className={styles.header} maxWidth="xl">
         <img className={styles.image} src={recipe.image} alt="recipe-img" />
-        <div className="titleWrapper">
+        <div className={styles.titleWrapper}>
           <p className={styles.title}>{recipe.title}</p>
         </div>
       </Container>
