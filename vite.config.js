@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       "/api": "https://vho1awboug.execute-api.us-east-1.amazonaws.com",
       "/spoonacularApi":
-        " https://vho1awboug.execute-api.us-east-1.amazonaws.com",
+        "https://vho1awboug.execute-api.us-east-1.amazonaws.com",
     },
   },
 });
