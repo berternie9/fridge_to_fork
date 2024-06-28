@@ -13,26 +13,43 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get("token");
+    const authenticateUser = async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get("token");
 
-    if (token) {
-      localStorage.setItem("token", token);
-      setIsAuthenticated(true);
-      const decodedToken = jwtDecode(token);
-      localStorage.setItem("userEmail", decodedToken.email);
-      AuthApi.findIdByEmail(decodedToken.email).then((id) =>
-        localStorage.setItem("userId", id)
-      );
-      window.history.replaceState({}, document.title, window.location.pathname);
-    } else {
-      const storedToken = localStorage.getItem("token");
-      if (storedToken) {
+      if (token) {
+        localStorage.setItem("token", token);
         setIsAuthenticated(true);
-        const decodedToken = jwtDecode(storedToken);
+        const decodedToken = jwtDecode(token);
         localStorage.setItem("userEmail", decodedToken.email);
+        try {
+          const id = await AuthApi.findIdByEmail(decodedToken.email);
+          localStorage.setItem("userId", id);
+        } catch (error) {
+          console.error("Error fetching user ID:", error);
+        }
+        window.history.replaceState(
+          {},
+          document.title,
+          window.location.pathname
+        );
+      } else {
+        const storedToken = localStorage.getItem("token");
+        if (storedToken) {
+          setIsAuthenticated(true);
+          const decodedToken = jwtDecode(storedToken);
+          localStorage.setItem("userEmail", decodedToken.email);
+          try {
+            const id = await AuthApi.findIdByEmail(decodedToken.email);
+            localStorage.setItem("userId", id);
+          } catch (error) {
+            console.error("Error fetching user ID:", error);
+          }
+        }
       }
-    }
+    };
+
+    authenticateUser();
   }, []);
 
   return (

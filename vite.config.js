@@ -6,9 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "https://vho1awboug.execute-api.us-east-1.amazonaws.com",
-      "/spoonacularApi":
-        "https://vho1awboug.execute-api.us-east-1.amazonaws.com",
+      "/api": "https://fridge-to-fork-api.onrender.com",
+      "/spoonacularApi": "https://fridge-to-fork-api.onrender.com",
     },
   },
 });
