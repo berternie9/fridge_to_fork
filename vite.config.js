@@ -5,10 +5,14 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
+    // proxy: {
+    //   "/api": "https://fridge-to-fork-api.onrender.com",
+    //   "/spoonacularApi": "https://fridge-to-fork-api.onrender.com",
+    // },
     proxy: {
-      "/api": "https://fridge-to-fork-api.onrender.com",
-      "/spoonacularApi": "https://fridge-to-fork-api.onrender.com",
+      "/api": "http://localhost:8080",
+      "/spoonacularApi": "http://localhost:8080",
     },
   },
-  base: `https://fridge-to-fork-api.onrender.com/`,
+  // base: `https://fridge-to-fork-api.onrender.com/`,
 });

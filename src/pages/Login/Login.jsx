@@ -3,8 +3,7 @@ import styles from "./Login.module.css";
 
 export default function Login() {
   const handleLogin = () => {
-    window.location.href =
-      "https://fridge-to-fork-api.onrender.com/auth/google";
+    window.location.href = "http://localhost:8080/auth/google";
   };
 
   return (
