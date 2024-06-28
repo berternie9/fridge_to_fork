@@ -10,4 +10,5 @@ export default defineConfig({
       "/spoonacularApi": "https://fridge-to-fork-api.onrender.com",
     },
   },
+  base: `https://fridge-to-fork-api.onrender.com/`,
 });
