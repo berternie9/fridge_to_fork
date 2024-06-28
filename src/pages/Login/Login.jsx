@@ -3,7 +3,7 @@ import styles from "./Login.module.css";
 
 export default function Login() {
   const handleLogin = () => {
-    window.location.href = "http://localhost:8080/auth/google";
+    window.location.href = `${import.meta.env.VITE_BASE_URL}/auth/google`;
   };
 
   return (
