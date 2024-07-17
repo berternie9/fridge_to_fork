@@ -17,7 +17,7 @@ Fridge to Fork is a web app with a React/Vite frontend, an ExpressJS backend, an
 
 ## Deployment
 
-Fridge to Fork is deployed using Render for the backend and storage, and GitHub Pages for content delivery:
+Fridge to Fork is deployed using Render for the backend and storage, and GitHub Pages for content delivery.
 
 ## Video Demonstration
 
@@ -27,29 +27,34 @@ Check out the video demonstration on YouTube below!
 
 ## Screenshots
 
-#### Home Page
-
-<!-- ![Home Page](/static/home_page.png) -->
-
 #### Recipe Search
 
-<!-- ![Recipe Search](/static/recipe_search.png) -->
+![Recipe Search](/public/recipe_search.png)
 
 #### Recipe Details
 
-<!-- ![Recipe Details](/static/recipe_details.png) -->
+![Recipe Details](/public/recipe_details.png)
 
 #### Saved Recipes
 
-<!-- ![Saved Recipes](/static/saved_recipes.png) -->
+![Saved Recipes](/public/saved_recipes.png)
 
 #### Add Recipe
 
-<!-- ![Add Recipe](/static/add_recipe.png) -->
+![Add Recipe](/public/add_recipe.png)
+
+#### Mobile view
+
+![Mobile view #1](/public/mobile_1.png)
+![Mobile view #2](/public/mobile_2.png)
 
 #### ER Diagram
 
-<!-- ![ER Diagram](/static/er-diagram.png) -->
+![ER Diagram](/public/er-diagram.png)
+
+#### Wireframe
+
+![Wireframe](/public/wireframe.png)
 
 ## Technologies Used
 
