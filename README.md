@@ -1,6 +1,6 @@
 # Fridge to Fork
 
-Fridge to Fork is a recipe-finding web app designed to help users discover recipes based on the ingredients they have at home. Users can filter recipes by cuisine and diet, save their favorite recipes to a personal list, and even record their own recipes.
+Fridge to Fork is a recipe-finding web app designed to help users discover recipes based on the ingredients they have at home. Users can filter recipes by cuisine and diet, save their favourite recipes to a personal list, and even record their own recipes.
 
 ## Features
 
@@ -15,15 +15,11 @@ Fridge to Fork is a recipe-finding web app designed to help users discover recip
 
 Fridge to Fork is a web app with a React/Vite frontend, an ExpressJS backend, and a PostgreSQL database.
 
-## Deployment
-
-Fridge to Fork is deployed using Render for the backend and storage, and GitHub Pages for content delivery.
+It was originally deployed using Render for the backend and storage, and GitHub Pages for content delivery. It is currently offline, but you can check out the video demonstration below!
 
 ## Video Demonstration
 
-Check out the video demonstration on YouTube below!
-
-<!-- [![Fridge to Fork screencast](https://img.youtube.com/vi/your_video_id/0.jpg)](https://www.youtube.com/watch?v=your_video_id) -->
+[![Fridge to Fork screencast](https://img.youtube.com/vi/pNn7ii5Z-A4/0.jpg)](https://youtu.be/pNn7ii5Z-A4)
 
 ## Screenshots
 
