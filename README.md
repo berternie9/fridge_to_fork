@@ -1,6 +1,6 @@
 # Fridge to Fork
 
-Fridge to Fork is an innovative recipe-finding app designed to help users discover recipes based on the ingredients they have at home. Users can filter recipes by cuisine and diet, save their favorite recipes to a personal list, and even record their own recipes.
+Fridge to Fork is a recipe-finding web app designed to help users discover recipes based on the ingredients they have at home. Users can filter recipes by cuisine and diet, save their favorite recipes to a personal list, and even record their own recipes.
 
 ## Features
 
@@ -13,48 +13,43 @@ Fridge to Fork is an innovative recipe-finding app designed to help users discov
 
 ## Getting Started
 
-Fridge to Fork is a web app with a React/Vite frontend, an ExpressJS backend, and a PostgreSQL database. It leverages various AWS services for deployment and storage.
+Fridge to Fork is a web app with a React/Vite frontend, an ExpressJS backend, and a PostgreSQL database.
 
 ## Deployment
 
-Fridge to Fork is deployed using Render for the backend and AWS services for storage and content delivery:
-
-- **Render:** Hosts the ExpressJS backend and PostgreSQL database.
-- **AWS S3:** Stores static assets.
-- **AWS CloudFront:** Distributes the frontend content globally.
-- **AWS RDS:** Hosts the PostgreSQL database.
+Fridge to Fork is deployed using Render for the backend and storage, and GitHub Pages for content delivery:
 
 ## Video Demonstration
 
 Check out the video demonstration on YouTube below!
 
-[![Fridge to Fork screencast](https://img.youtube.com/vi/your_video_id/0.jpg)](https://www.youtube.com/watch?v=your_video_id)
+<!-- [![Fridge to Fork screencast](https://img.youtube.com/vi/your_video_id/0.jpg)](https://www.youtube.com/watch?v=your_video_id) -->
 
 ## Screenshots
 
 #### Home Page
 
-![Home Page](/static/home_page.png)
+<!-- ![Home Page](/static/home_page.png) -->
 
 #### Recipe Search
 
-![Recipe Search](/static/recipe_search.png)
+<!-- ![Recipe Search](/static/recipe_search.png) -->
 
 #### Recipe Details
 
-![Recipe Details](/static/recipe_details.png)
+<!-- ![Recipe Details](/static/recipe_details.png) -->
 
 #### Saved Recipes
 
-![Saved Recipes](/static/saved_recipes.png)
+<!-- ![Saved Recipes](/static/saved_recipes.png) -->
 
 #### Add Recipe
 
-![Add Recipe](/static/add_recipe.png)
+<!-- ![Add Recipe](/static/add_recipe.png) -->
 
 #### ER Diagram
 
-![ER Diagram](/static/er-diagram.png)
+<!-- ![ER Diagram](/static/er-diagram.png) -->
 
 ## Technologies Used
 
@@ -75,9 +70,14 @@ Check out the video demonstration on YouTube below!
   - Miro
 - **Deployment and Hosting:**
   - Render
+  - GitHub Pages
+- **Used during development only:**
   - AWS S3
   - AWS CloudFront
   - AWS RDS
+  - AWS Lambda
+  - AWS API Gateway
+  - AWS EC2
 
 ## Next Steps
 
