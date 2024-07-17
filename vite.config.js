@@ -17,7 +17,7 @@ export default defineConfig({
   //     },
   //   },
   // },
-  base: "/",
+  base: "/fridge_to_fork/",
   build: {
     outDir: "docs",
   },
