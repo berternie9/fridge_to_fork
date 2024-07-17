@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           body: { backgroundColor: "var(--background-colour)" },
         }}
       />
-      <BrowserRouter>
+      <BrowserRouter basename="/fridge_to_fork">
         <App />
       </BrowserRouter>
     </StyledEngineProvider>
