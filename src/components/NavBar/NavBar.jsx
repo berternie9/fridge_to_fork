@@ -49,17 +49,26 @@ export default function NavBar() {
       >
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="/">
+            <ListItemButton
+              component="a"
+              href={`${import.meta.env.VITE_PREFIX_URL}/`}
+            >
               <ListItemText primary="Fridge to Fork" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="/saved">
+            <ListItemButton
+              component="a"
+              href={`${import.meta.env.VITE_PREFIX_URL}/saved`}
+            >
               <ListItemText primary="Saved" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="/userRecipes">
+            <ListItemButton
+              component="a"
+              href={`${import.meta.env.VITE_PREFIX_URL}/userRecipes`}
+            >
               <ListItemText primary="My Recipes" />
             </ListItemButton>
           </ListItem>
