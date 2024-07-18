@@ -50,7 +50,10 @@ export default function NavBar() {
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a">
-              <Link to="/" className={`${styles.link} ${styles.linkWrapper}`}>
+              <Link
+                to="/"
+                className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
+              >
                 Fridge to Fork
               </Link>
             </ListItemButton>
@@ -59,7 +62,7 @@ export default function NavBar() {
             <ListItemButton component="a">
               <Link
                 to="/saved"
-                className={`${styles.link} ${styles.linkWrapper}`}
+                className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
               >
                 Saved
               </Link>
@@ -69,7 +72,7 @@ export default function NavBar() {
             <ListItemButton component="a">
               <Link
                 to="/userRecipes"
-                className={`${styles.link} ${styles.linkWrapper}`}
+                className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
               >
                 My Recipes
               </Link>
