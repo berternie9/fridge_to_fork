@@ -2,15 +2,24 @@ import { Container, Grid, Box } from "@mui/material";
 import styles from "./SavedRecipe.module.css";
 
 export default function SavedRecipe({ savedRecipe }) {
+  const isMobile = useMediaQuery("(max-width:600px)");
+
   return (
     <>
-      <Container className={styles.header} maxWidth="xl">
+      <Container
+        className={styles.header}
+        style={{ maxWidth: isMobile ? "80vw" : "60vw" }}
+      >
         <img
           className={styles.image}
           src={savedRecipe.recipe_data.image}
+          style={{ width: isMobile ? "100%" : "auto" }}
           alt="recipe-img"
         />
-        <div className="titleWrapper">
+        <div
+          className="titleWrapper"
+          style={{ textAlign: isMobile ? "center" : "left" }}
+        >
           <p className={styles.title}>{savedRecipe.title}</p>
         </div>
       </Container>
