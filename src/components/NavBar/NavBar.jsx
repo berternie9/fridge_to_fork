@@ -49,33 +49,30 @@ export default function NavBar() {
       >
         <List>
           <ListItem disablePadding>
-            <ListItemButton
-              component="a"
-              href={`${import.meta.env.VITE_PREFIX_URL}/`}
-            >
-              <ListItemText primary="Fridge to Fork" />
+            <ListItemButton component="a">
+              <Link to="/" className={`${styles.link} ${styles.linkWrapper}`}>
+                Fridge to Fork
+              </Link>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton
-              component="a"
-              // href={`${import.meta.env.VITE_PREFIX_URL}/saved`}
-            >
+            <ListItemButton component="a">
               <Link
                 to="/saved"
                 className={`${styles.link} ${styles.linkWrapper}`}
               >
                 Saved
               </Link>
-              ;{/* <ListItemText primary="Saved" /> */}
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton
-              component="a"
-              href={`${import.meta.env.VITE_PREFIX_URL}/userRecipes`}
-            >
-              <ListItemText primary="My Recipes" />
+            <ListItemButton component="a">
+              <Link
+                to="/userRecipes"
+                className={`${styles.link} ${styles.linkWrapper}`}
+              >
+                My Recipes
+              </Link>
             </ListItemButton>
           </ListItem>
           {localStorage.getItem("userEmail") ? (
