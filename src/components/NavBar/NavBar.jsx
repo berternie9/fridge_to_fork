@@ -22,11 +22,11 @@ export default function NavBar() {
 
   function handleLogout(e) {
     localStorage.clear();
-    navigate("/login");
+    navigate(`/login`);
   }
 
   function handleLogin(e) {
-    navigate("/login");
+    navigate(`/login`);
   }
 
   function toggleDrawer(open) {
@@ -59,9 +59,15 @@ export default function NavBar() {
           <ListItem disablePadding>
             <ListItemButton
               component="a"
-              href={`${import.meta.env.VITE_PREFIX_URL}/saved`}
+              // href={`${import.meta.env.VITE_PREFIX_URL}/saved`}
             >
-              <ListItemText primary="Saved" />
+              <Link
+                to="/saved"
+                className={`${styles.link} ${styles.linkWrapper}`}
+              >
+                Saved
+              </Link>
+              ;{/* <ListItemText primary="Saved" /> */}
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
