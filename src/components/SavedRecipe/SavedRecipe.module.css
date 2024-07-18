@@ -14,7 +14,8 @@
   color: var(--dark-grey);
   font-size: xx-large;
   font-weight: bold;
-  margin: 0 2rem;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .image {
@@ -54,4 +55,15 @@
   display: inline;
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .header {
+    max-width: 80vw;
+  }
+  .ingredients,
+  .instructions {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }

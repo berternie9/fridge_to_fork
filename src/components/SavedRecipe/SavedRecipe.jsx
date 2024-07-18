@@ -1,25 +1,16 @@
-import { Container, Grid, Box, useMediaQuery } from "@mui/material";
+import { Container, Grid, Box } from "@mui/material";
 import styles from "./SavedRecipe.module.css";
 
 export default function SavedRecipe({ savedRecipe }) {
-  const isMobile = useMediaQuery("(max-width:600px)");
-
   return (
     <>
-      <Container
-        className={styles.header}
-        style={{ maxWidth: isMobile ? "80vw" : "60vw" }}
-      >
+      <Container className={styles.header} maxWidth="md">
         <img
           className={styles.image}
           src={savedRecipe.recipe_data.image}
-          style={{ width: isMobile ? "100%" : "auto" }}
           alt="recipe-img"
         />
-        <div
-          className="titleWrapper"
-          style={{ textAlign: isMobile ? "center" : "left" }}
-        >
+        <div className={styles.titleWrapper}>
           <p className={styles.title}>{savedRecipe.title}</p>
         </div>
       </Container>
@@ -31,7 +22,7 @@ export default function SavedRecipe({ savedRecipe }) {
           rowSpacing={1}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
-          <Grid className={styles.ingredients} item xs={6} md={3}>
+          <Grid className={styles.ingredients} item xs={12} sm={6} md={3}>
             <p className={styles.contentHeader}>Ingredients:</p>
             <ul>
               {savedRecipe.recipe_data.ingredients.map((ingredient, idx) => (
@@ -41,7 +32,7 @@ export default function SavedRecipe({ savedRecipe }) {
               ))}
             </ul>
           </Grid>
-          <Grid className={styles.instructions} item xs={6} md={6}>
+          <Grid className={styles.instructions} item xs={12} sm={6} md={3}>
             <p className={styles.contentHeader}>Instructions:</p>
             {savedRecipe.recipe_data.instructions.map((element, idx) => (
               <section key={idx}>
