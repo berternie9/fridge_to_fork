@@ -49,14 +49,12 @@ export default function NavBar() {
       >
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a">
-              <Link
-                to="/"
-                className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
-              >
-                Fridge to Fork
-              </Link>
-            </ListItemButton>
+            <Link
+              to="/"
+              className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
+            >
+              Fridge to Fork
+            </Link>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a">
