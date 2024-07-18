@@ -57,24 +57,20 @@ export default function NavBar() {
             </Link>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a">
-              <Link
-                to="/saved"
-                className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
-              >
-                Saved
-              </Link>
-            </ListItemButton>
+            <Link
+              to="/saved"
+              className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
+            >
+              Saved
+            </Link>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a">
-              <Link
-                to="/userRecipes"
-                className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
-              >
-                My Recipes
-              </Link>
-            </ListItemButton>
+            <Link
+              to="/userRecipes"
+              className={`${styles.linkDrawer} ${styles.linkWrapperDrawer}`}
+            >
+              My Recipes
+            </Link>
           </ListItem>
           {localStorage.getItem("userEmail") ? (
             <>
