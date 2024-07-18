@@ -1,4 +1,4 @@
-import { Container, Grid, Box } from "@mui/material";
+import { Container, Grid, Box, useMediaQuery } from "@mui/material";
 import styles from "./SavedRecipe.module.css";
 
 export default function SavedRecipe({ savedRecipe }) {
